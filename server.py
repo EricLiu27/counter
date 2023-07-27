@@ -20,7 +20,7 @@ def refresh():
     if request.form['addcount'] == 'plus':
         session['count'] += 1
     if request.form['addcount'] == 'reset':
-        session['count'] = 0
+        session['count'] = 1
     
     return render_template("index.html")
 
